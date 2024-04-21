@@ -42,11 +42,11 @@ function About() {
             w={{ base: "100%", md: "80%" }}
             textAlign="justify"
           >
-            At{" "}
+            At{""}
             <Box as="span" color={"primary"}>
-              TrueHealthSearch
+            TrueHealthSearch
             </Box>
-            , {"we're"} dedicated to simplifying the complexities of medical
+            ,{"we're"} dedicated to simplifying the complexities of medical
             coding. Our platform serves as a comprehensive resource hub,
             offering users access to a vast database of accurate and up-to-date
             information. Whether {"you're"} a seasoned professional or just
