@@ -49,8 +49,9 @@ function Hero() {
             </Box>{" "}
             Healthcare Professionals' Workflow
           </Text>
-          <Link href={"/chat"}>
+          <Link href={"/chat"} passHref>
             <Button
+              as="a"
               bg={"primary"}
               color={text}
               _hover={{ bg: "transparent", color: "primary", border: "2px" }}
