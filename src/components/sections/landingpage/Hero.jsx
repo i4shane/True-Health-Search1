@@ -6,11 +6,12 @@ import {
   Flex,
   Heading,
   Img,
+  Link,
   Text,
   VStack,
   useColorModeValue,
 } from "@chakra-ui/react";
-import Link from "next/link";
+import { Link as NextLink } from "next/link";
 import React from "react";
 
 function Hero() {
@@ -46,11 +47,11 @@ function Hero() {
           <Text mb={4} textAlign={{ base: "center", lg: "left" }}>
             The AI-Driven Solution{" "}
             <Box as="span" color={"primary"}>
-              Transforming 
+              Transforming
             </Box>{" "}
             Healthcare Professionals' Workflow
           </Text>
-          <Link href={"/chat"}>
+          <NextLink href={"/chat"}>
             <Button
               bg={"primary"}
               color={text}
@@ -58,7 +59,7 @@ function Hero() {
             >
               Get Answers Now
             </Button>
-          </Link>
+          </NextLink>
         </VStack>
         <Img
           src="Hero.png"
