@@ -36,21 +36,19 @@ function Hero() {
             mb={4}
             textAlign={{ base: "center", lg: "left" }}
           >
-            Your Trusted <br />
+            Accelerate Your <br />
             <Box color={"primary"} as="span">
               Medical Coding
             </Box>
             <br />
-            Companion
+            with True Health Search
           </Heading>
           <Text mb={4} textAlign={{ base: "center", lg: "left" }}>
-            Welcome to{" "}
+            The AI-Driven Solution{" "}
             <Box as="span" color={"primary"}>
-              TrueHealthSearch
+              Transforming 
             </Box>{" "}
-            – Where Collaboration,
-            <br /> Knowledge, and Growth Unite to Elevate Medical Coding
-            Standards!
+            Healthcare Professionals' Workflow
           </Text>
           <Link href={"/chat"}>
             <Button
@@ -58,7 +56,7 @@ function Hero() {
               color={text}
               _hover={{ bg: "transparent", color: "primary", border: "2px" }}
             >
-              Get Answered
+              Get Answers Now
             </Button>
           </Link>
         </VStack>
