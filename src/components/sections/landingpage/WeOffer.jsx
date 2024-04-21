@@ -45,7 +45,6 @@ function WeOffer() {
         gap={30}
       >
         <Card maxW="sm" borderRadius={10} p={4} boxShadow={"md"}>
-          {" "}
           <CardBody>
             <Img src="search.png" borderRadius="lg" />
             <Stack mt="6" spacing="3">
@@ -59,7 +58,6 @@ function WeOffer() {
           </CardBody>
         </Card>
         <Card maxW="sm" borderRadius={10} p={4} boxShadow={"md"}>
-          {" "}
           <CardBody>
             <Img src="resource.png" borderRadius="lg" />
             <Stack mt="6" spacing="3">
@@ -73,7 +71,6 @@ function WeOffer() {
           </CardBody>
         </Card>
         <Card maxW="sm" borderRadius={10} p={4} boxShadow={"md"}>
-          {" "}
           <CardBody>
             <Img src="ai.png" borderRadius="lg" />
             <Stack mt="6" spacing="3">
@@ -81,7 +78,7 @@ function WeOffer() {
                 Intuitive Chat UI
               </Heading>
               <Text px={3}>
-               Our user-friendly chat interface is designed to integrate effortlessly into your workflow. Ask questions in natural language and receive instant, trustworthy answers, allowing you to focus on what matters most: delivering exceptional patient care.
+                Our user-friendly chat interface is designed to integrate effortlessly into your workflow. Ask questions in natural language and receive instant, trustworthy answers, allowing you to focus on what matters most: delivering exceptional patient care.
               </Text>
             </Stack>
           </CardBody>
