@@ -44,14 +44,9 @@ function About() {
           >
             At{" "}
             <Box as="span" color={"primary"}>
-            TrueHealthSearch
+              TrueHealthSearch
             </Box>
-            , {"we're"} dedicated to simplifying the complexities of medical
-            coding. Our platform serves as a comprehensive resource hub,
-            offering users access to a vast database of accurate and up-to-date
-            information. Whether {"you're"} a seasoned professional or just
-            starting, our AI-powered tools are designed to assist you in
-            navigating and decoding intricate coding scenarios.
+            , we're dedicated to simplifying the complexities of medical coding. Our platform serves as a comprehensive resource hub, offering users access to a vast database of accurate and up-to-date information. Whether you're a seasoned professional or just starting, our AI-powered tools are designed to assist you in navigating and decoding intricate coding scenarios.
           </Text>
         </VStack>
         <Img
