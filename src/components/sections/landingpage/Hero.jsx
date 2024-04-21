@@ -1,4 +1,5 @@
 "use client";
+
 import {
   Box,
   Button,
@@ -35,28 +36,29 @@ function Hero() {
             mb={4}
             textAlign={{ base: "center", lg: "left" }}
           >
-            Accelerate Your <br />
+            Your Trusted <br />
             <Box color={"primary"} as="span">
               Medical Coding
             </Box>
             <br />
-            with True Health Search
+            Companion
           </Heading>
           <Text mb={4} textAlign={{ base: "center", lg: "left" }}>
-            The AI-Driven Solution{" "}
+            Welcome to{" "}
             <Box as="span" color={"primary"}>
-              Transforming
+              TrueHealthSearch
             </Box>{" "}
-            Healthcare Professionals' Workflow
+            – Where Collaboration,
+            <br /> Knowledge, and Growth Unite to Elevate Medical Coding
+            Standards!
           </Text>
-          <Link href={"/chat"} passHref>
+          <Link href={"/chat"}>
             <Button
-              as="a"
               bg={"primary"}
               color={text}
               _hover={{ bg: "transparent", color: "primary", border: "2px" }}
             >
-              Get Answers Now
+              Get Answered
             </Button>
           </Link>
         </VStack>
