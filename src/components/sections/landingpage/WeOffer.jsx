@@ -33,13 +33,9 @@ function WeOffer() {
       >
         <Heading color={"primary"}>Our Features</Heading>
         <Text mb={4} w={"80%"}>
-          Explore our curated educational resources, offering in-depth articles
-          and guides to enhance your coding expertise. Need real-time
-          assistance? Our cutting-edge AI tool is here to unravel complexities
-          and provide instant clarity.
+          True Health Search is your ultimate ally in navigating the complexities of medical coding. Our AI-powered platform offers a seamless, intuitive experience that adapts to your needs. Say goodbye to time-consuming searches and hello to instant, accurate answers. With our comprehensive educational resources and real-time AI assistance, you'll gain the knowledge and confidence to excel in your role.
         </Text>
       </VStack>
-
       <Flex
         justifyContent={"space-evenly"}
         alignItems={"center"}
@@ -54,11 +50,10 @@ function WeOffer() {
             <Img src="search.png" borderRadius="lg" />
             <Stack mt="6" spacing="3">
               <Heading size="md" color={text} px={3}>
-                Comprehensive Search
+                Unparalleled Accuracy
               </Heading>
               <Text px={3}>
-                Explore our extensive medical coding database. Type your query,
-                and let our AI fetch the latest, relevant information for you
+                True Health Search's cutting-edge AI technology ensures you always have access to the most precise and current medical coding information. Make decisions with unwavering confidence, knowing our platform is your reliable partner.
               </Text>
             </Stack>
           </CardBody>
@@ -69,11 +64,10 @@ function WeOffer() {
             <Img src="resource.png" borderRadius="lg" />
             <Stack mt="6" spacing="3">
               <Heading size="md" color={text} px={3}>
-                Comprehensive Search
+                Comprehensive Resources
               </Heading>
               <Text px={3}>
-                Explore our extensive medical coding database. Type your query,
-                and let our AI fetch the latest, relevant information for you
+                Unlock a wealth of knowledge with our extensive library of clinical calculators, CDI tip sheets, and lab values tables. These carefully curated resources are at your fingertips, empowering you to work smarter, not harder.
               </Text>
             </Stack>
           </CardBody>
@@ -84,11 +78,10 @@ function WeOffer() {
             <Img src="ai.png" borderRadius="lg" />
             <Stack mt="6" spacing="3">
               <Heading size="md" color={text} px={3}>
-                Comprehensive Search
+                Intuitive Chat UI
               </Heading>
               <Text px={3}>
-                Explore our extensive medical coding database. Type your query,
-                and let our AI fetch the latest, relevant information for you
+               Our user-friendly chat interface is designed to integrate effortlessly into your workflow. Ask questions in natural language and receive instant, trustworthy answers, allowing you to focus on what matters most: delivering exceptional patient care.
               </Text>
             </Stack>
           </CardBody>
