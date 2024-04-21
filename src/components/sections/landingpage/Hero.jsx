@@ -1,17 +1,15 @@
 "use client";
-
 import {
   Box,
   Button,
   Flex,
   Heading,
   Img,
-  Link,
   Text,
   VStack,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { Link as NextLink } from "next/link";
+import Link from "next/link";
 import React from "react";
 
 function Hero() {
@@ -51,7 +49,7 @@ function Hero() {
             </Box>{" "}
             Healthcare Professionals' Workflow
           </Text>
-          <NextLink href={"/chat"}>
+          <Link href={"/chat"}>
             <Button
               bg={"primary"}
               color={text}
@@ -59,7 +57,7 @@ function Hero() {
             >
               Get Answers Now
             </Button>
-          </NextLink>
+          </Link>
         </VStack>
         <Img
           src="Hero.png"
