@@ -8,8 +8,8 @@ import {
   VStack,
   useColorModeValue,
 } from "@chakra-ui/react";
-import Link from "next/link";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Hero() {
   const text = useColorModeValue("#fff", "#000");
@@ -50,15 +50,16 @@ function Hero() {
             <br /> Knowledge, and Growth Unite to Elevate Medical Coding
             Standards!
           </Text>
-          <Link href={"/chat"}>
-            <Button
-              bg={"primary"}
-              color={text}
-              _hover={{ bg: "transparent", color: "primary", border: "2px" }}
-            >
-              Get Answered
-            </Button>
+          <Link to={"/chat"}>
+          <Button
+            bg={"primary"}
+            color={text}
+            _hover={{ bg: "transparent", color: "primary", border: "2px" }}
+          >
+            Get Answered
+          </Button>
           </Link>
+         
         </VStack>
         <Img
           src="Hero.png"
