@@ -1,56 +1,19 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Img,
-  Text,
-  VStack,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Stack, useColorModeValue, Button, VStack, Text, Img } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Hero() {
   const text = useColorModeValue("#fff", "#000");
 
   return (
-    <Box>
-      <Flex
-        direction={{ base: "column", lg: "row" }}
-        justifyContent={{ base: "center", md: "space-evenly" }}
-        alignItems={{ base: "center", md: "center" }}
-        p={{ base: 5, md: 10 }}
-        m={{ base: 3, md: 5 }}
-        gap={{ base: "30px", lg: "25px" }}
-      >
-        <VStack
-          justify={"center"}
-          alignItems={{ base: "center", lg: "flex-start" }}
-          gap={{ base: "20px", lg: "10px" }}
-        >
-          <Heading
-            size={{ base: "2xl", md: "4xl" }}
-            mb={4}
-            textAlign={{ base: "center", lg: "left" }}
-          >
-            Your Trusted <br />
-            <Box color={"primary"} as="span">
-              Medical Coding
-            </Box>
-            <br />
-            Companion
-          </Heading>
-          <Text mb={4} textAlign={{ base: "center", lg: "left" }}>
-            Welcome to{" "}
-            <Box as="span" color={"primary"}>
-              TrueHealthSearch
-            </Box>{" "}
-            – Where Collaboration,
-            <br /> Knowledge, and Growth Unite to Elevate Medical Coding
-            Standards!
-          </Text>
-          <Link to={"/chat"}>
+    <Stack direction={{ base: "column", md: "row" }} spacing={20}>
+      <VStack align="start" spacing={8}>
+        <Text fontSize={{ base: "4xl", md: "6xl" }} fontWeight="bold" color={text}>
+          Unifying Medical Coding
+          <br /> Knowledge, and Growth Unite to Elevate Medical Coding
+          Standards!
+        </Text>
+        <Link href="/chat">
           <Button
             bg={"primary"}
             color={text}
@@ -58,17 +21,10 @@ function Hero() {
           >
             Get Answered
           </Button>
-          </Link>
-         
-        </VStack>
-        <Img
-          src="Hero.png"
-          alt="Hero Image"
-          boxSize={{ base: "100%", md: "auto" }}
-          mb={{ base: 4, md: 0 }}
-        />
-      </Flex>
-    </Box>
+        </Link>
+      </VStack>
+      <Img src="Hero.png" />
+    </Stack>
   );
 }
 
