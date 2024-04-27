@@ -69,7 +69,7 @@ function WeOffer() {
             <Img src="resource.png" borderRadius="lg" />
             <Stack mt="6" spacing="3">
               <Heading size="md" color={text} px={3}>
-                Comprehensive Search
+                Unparalleled Accuracy
               </Heading>
               <Text px={3}>
                 Explore our extensive medical coding database. Type your query,
