@@ -46,7 +46,12 @@ function About() {
             <Box as="span" color={"primary"}>
               TrueHealthSearch
             </Box>
-            ,{" "}we are dedicated to simplifying the complex world of medical coding for healthcare professionals. Our mission is to provide an easily accessible, AI-powered platform that delivers accurate and reliable information, fostering growth, collaboration, and knowledge in the medical community.
+            , {"we're"} dedicated to simplifying the complexities of medical
+            coding. Our platform serves as a comprehensive resource hub,
+            offering users access to a vast database of accurate and up-to-date
+            information. Whether {"you're"} a seasoned professional or just
+            starting, our AI-powered tools are designed to assist you in
+            navigating and decoding intricate coding scenarios.
           </Text>
         </VStack>
         <Img
