@@ -15,23 +15,22 @@ import React from "react";
 function FAQSection() {
   const faqs = [
     {
-      question: "How accurate is the information sourced on the platform?",
-      answer: "The purpose of this website is...",
+      question: "How reliable is the information on TrueHealthSearch.com?",
+      answer:
+        "Our content is sourced from trusted, authoritative sources and regularly updated to ensure accuracy and relevance.",
     },
     {
-      question: "Can I access the platform on different devices?",
-      answer: "The purpose of this website is...",
+      question: "Is my personal information secure on your platform?",
+      answer:
+        "Yes, we take data privacy seriously. We never share your personal information with third parties.",
     },
     {
-      question: "How does the AI tool assist in coding dilemmas?",
-      answer: "The purpose of this website is...",
-    },
-    {
-      question: "What educational resources do you provide?",
-      answer: "The purpose of this website is...",
+      question: "Can I access TrueHealthSearch.com on my mobile device?",
+      answer:
+        "Absolutely! Our platform is fully optimized for mobile, so you can access the information you need on the go.",
     },
   ];
-
+  
   return (
     <Box pb={"50px"}>
       <VStack
