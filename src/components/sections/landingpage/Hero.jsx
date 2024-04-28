@@ -50,7 +50,7 @@ function Hero() {
             </Box>{" "}
             – Your trusted hub,
             <br /> for effortless access to up-to-date, accurate healthcare information
-            Standards!
+            
           </Text>
           <Link href={"/chat"}>
             <Button
