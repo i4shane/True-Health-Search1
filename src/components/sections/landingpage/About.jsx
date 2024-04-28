@@ -42,16 +42,18 @@ function About() {
             w={{ base: "100%", md: "80%" }}
             textAlign="justify"
           >
-            At{" "}
+            Empowering Healthcare Professionals Through Innovation At{" "}
             <Box as="span" color={"primary"}>
               TrueHealthSearch
             </Box>
-            , {"we're"} dedicated to simplifying the complexities of medical
-            coding. Our platform serves as a comprehensive resource hub,
-            offering users access to a vast database of accurate and up-to-date
-            information. Whether {"you're"} a seasoned professional or just
-            starting, our AI-powered tools are designed to assist you in
-            navigating and decoding intricate coding scenarios.
+            , we understand the complexities and challenges healthcare workers
+            face every day. That's why we've created a comprehensive resource
+            hub and suite of AI-powered tools designed to simplify your access
+            to trusted, accurate information. Our mission is to enable you to
+            make informed decisions, increase efficiency, and ultimately,
+            provide better patient care. With TrueHealthSearch, you can feel
+            confident in your ability to navigate the ever-changing healthcare
+            landscape.
           </Text>
         </VStack>
         <Img
