@@ -36,20 +36,20 @@ function Hero() {
             mb={4}
             textAlign={{ base: "center", lg: "left" }}
           >
-            Your Trusted <br />
+            Get <br />
             <Box color={"primary"} as="span">
-              Medical Coding
+              Accurate Answers 
             </Box>
             <br />
-            Companion
+            Faster
           </Heading>
           <Text mb={4} textAlign={{ base: "center", lg: "left" }}>
             Welcome to{" "}
             <Box as="span" color={"primary"}>
               TrueHealthSearch
             </Box>{" "}
-            – Where Collaboration,
-            <br /> Knowledge, and Growth Unite to Elevate Medical Coding
+            – Your trusted hub,
+            <br /> for effortless access to up-to-date, accurate healthcare information
             Standards!
           </Text>
           <Link href={"/chat"}>

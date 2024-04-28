@@ -16,8 +16,7 @@ function FAQSection() {
   const faqs = [
     {
       question: "How reliable is the information on TrueHealthSearch.com?",
-      answer:
-        "Our content is sourced from trusted, authoritative sources and regularly updated to ensure accuracy and relevance.",
+      answer: "Our content is sourced from trusted, authoritative sources and regularly updated to ensure accuracy and relevance.",
     },
     {
       question: "Is my personal information secure on your platform?",
