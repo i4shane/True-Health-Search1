@@ -20,13 +20,11 @@ function FAQSection() {
     },
     {
       question: "Is my personal information secure on your platform?",
-      answer:
-        "Yes, we take data privacy seriously. We never share your personal information with third parties.",
+      answer: "Yes, we take data privacy seriously. We never share your personal information with third parties.",
     },
     {
       question: "Can I access TrueHealthSearch.com on my mobile device?",
-      answer:
-        "Absolutely! Our platform is fully optimized for mobile, so you can access the information you need on the go.",
+      answer: "Absolutely! Our platform is fully optimized for mobile, so you can access the information you need on the go.",
     },
   ];
   
@@ -42,8 +40,7 @@ function FAQSection() {
       >
         <Heading>Frequently Asked Questions</Heading>
         <Text mb={4} w={"80%"}>
-          Got questions? Find quick answers to common queries in our FAQ
-          section. Streamline your experience with hassle-free solutions
+          Got questions? Find quick answers to our most common questions
         </Text>
       </VStack>
 
