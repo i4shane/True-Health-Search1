@@ -19,9 +19,22 @@ import {
   DrawerBody,
   VStack,
   Spacer,
+  Avatar,
+  Tooltip,
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverBody,
+  PopoverFooter,
+  PopoverArrow,
+  PopoverCloseButton,
+  PopoverAnchor,
+  Portal, // Add this line
 } from "@chakra-ui/react";
 import "@fontsource/ibm-plex-sans/400.css";
 import { FaSun, FaMoon, FaBars } from "react-icons/fa";
+import { useUser } from "@auth0/nextjs-auth0/client";
 
 function NavBar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -32,6 +45,7 @@ function NavBar() {
   const handleDrawerToggle = () => {
     setIsOpen(!isOpen);
   };
+  const { user, error, isLoading } = useUser();
 
   return (
     <>
@@ -127,34 +141,77 @@ function NavBar() {
                   isRound={true}
                   onClick={toggleColorMode}
                 />
-                <Link href="/api/auth/login">
-                  <Button
-                    display={{ base: "none", md: "block" }}
-                    borderRadius={"50px"}
-                    size={"md"}
-                    px={5}
-                    border={`2px solid`}
-                    borderColor={"primary"}
-                    color={"primary"}
-                    bg={background}
-                  >
-                    Log in
-                  </Button>
-                </Link>
 
-                <Link>
-                  <Button
-                    display={{ base: "none", md: "block" }}
-                    bg={"primary"}
-                    borderRadius={"50px"}
-                    px={5}
-                    _hover={{ bg: "primary" }}
-                    size={"md"}
-                    color={background}
-                  >
-                    Sign up
-                  </Button>
-                </Link>
+                {user ? (
+                  <>
+                    <Popover>
+                      <PopoverTrigger>
+                        <Avatar
+                          mt={1}
+                          size="sm"
+                          name={user.name}
+                          src={user.picture}
+                          borderRadius="full"
+                        />
+                      </PopoverTrigger>
+                      <Portal>
+                        <PopoverContent>
+                          <PopoverArrow />
+                          <PopoverBody>
+                            <h2>{user.name}</h2>
+                            <h2>{user.email}</h2>
+                          </PopoverBody>
+                          <PopoverFooter>
+                            <Link href="/api/auth/logout">
+                              <Button
+                                w="100%"
+                                bg={"primary"}
+                                borderRadius={"50px"}
+                                px={5}
+                                _hover={{ bg: "primary" }}
+                                size={"md"}
+                                color={background}
+                              >
+                                Log Out
+                              </Button>
+                            </Link>
+                          </PopoverFooter>
+                        </PopoverContent>
+                      </Portal>
+                    </Popover>
+                  </>
+                ) : (
+                  <>
+                    <Link href="/api/auth/login">
+                      <Button
+                        display={{ base: "none", md: "block" }}
+                        borderRadius={"50px"}
+                        size={"md"}
+                        px={5}
+                        border={`2px solid`}
+                        borderColor={"primary"}
+                        color={"primary"}
+                        bg={background}
+                      >
+                        Log in
+                      </Button>
+                    </Link>
+
+                    <Link href="https://dev-m6c1jticnvbj81k5.us.auth0.com/u/signup?state=hKFo2SBjaS1qY3IycXRGcTlOc1V4cld2YlJIZjh6aUtjSnhQRKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIG9HdTBZWXg2Zk1EcGdFY0hZNmhudlJhWXBObE85MzJZo2NpZNkgNHZXWWx4dVNxTlJMVFNDSlZhRXNLcWtEM0puOEVTbmI">
+                      <Button
+                        display={{ base: "none", md: "block" }}
+                        bg={"primary"}
+                        borderRadius={"50px"}
+                        px={5}
+                        _hover={{ bg: "primary" }}
+                        size={"md"}
+                        color={background}
+                      >
+                        Sign up
+                      </Button>
+                    </Link>
+                  </>
+                )}
 
                 {/* Hamburger Icon for Mobile */}
                 <Box display={{ base: "block", md: "none" }}>
@@ -198,27 +255,70 @@ function NavBar() {
                 Pricing
               </Link>
               {/* Login and Signup Buttons */}
-              <Button
-                width={"100%"}
-                size={"md"}
-                px={5}
-                border={`2px solid`}
-                borderColor={"primary"}
-                color={"primary"}
-                bg={background}
-              >
-                Log in
-              </Button>
-              <Button
-                bg={"primary"}
-                width={"100%"}
-                px={5}
-                _hover={{ bg: "primary" }}
-                size={"md"}
-                color={background}
-              >
-                Sign up
-              </Button>
+
+              {user ? (
+                <>
+                  <Popover>
+                    <PopoverTrigger>
+                      <a></a>
+                    </PopoverTrigger>
+                    <Portal>
+                      <PopoverContent>
+                        <PopoverArrow />
+                        <PopoverBody>
+                          <h2>{user.name}</h2>
+                          <h2>{user.email}</h2>
+                        </PopoverBody>
+                        <PopoverFooter>
+                          <Link href="/api/auth/logout">
+                            <Button
+                              w="100%"
+                              display={{ base: "none", md: "block" }}
+                              bg={"primary"}
+                              borderRadius={"50px"}
+                              px={5}
+                              _hover={{ bg: "primary" }}
+                              size={"md"}
+                              color={background}
+                            >
+                              Log Out
+                            </Button>
+                          </Link>
+                        </PopoverFooter>
+                      </PopoverContent>
+                    </Portal>
+                  </Popover>
+                </>
+              ) : (
+                <>
+                  <Link href="/api/auth/login">
+                    <Button
+                      width={"100%"}
+                      size={"md"}
+                      px={5}
+                      border={`2px solid`}
+                      borderColor={"primary"}
+                      color={"primary"}
+                      bg={background}
+                    >
+                      Log in
+                    </Button>
+                  </Link>
+
+                  <Link href="https://dev-m6c1jticnvbj81k5.us.auth0.com/u/signup?state=hKFo2SBjaS1qY3IycXRGcTlOc1V4cld2YlJIZjh6aUtjSnhQRKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIG9HdTBZWXg2Zk1EcGdFY0hZNmhudlJhWXBObE85MzJZo2NpZNkgNHZXWWx4dVNxTlJMVFNDSlZhRXNLcWtEM0puOEVTbmI">
+                    <Button
+                      bg={"primary"}
+                      width={"100%"}
+                      px={5}
+                      _hover={{ bg: "primary" }}
+                      size={"md"}
+                      color={background}
+                    >
+                      Sign up
+                    </Button>
+                  </Link>
+                </>
+              )}
             </VStack>
           </DrawerBody>
         </DrawerContent>
